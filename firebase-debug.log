@@ -1,0 +1,130 @@
+[debug] [2021-02-24T19:18:12.535Z] ----------------------------------------------------------------------
+[debug] [2021-02-24T19:18:12.537Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2021-02-24T19:18:12.538Z] CLI Version:   9.3.0
+[debug] [2021-02-24T19:18:12.538Z] Platform:      darwin
+[debug] [2021-02-24T19:18:12.538Z] Node Version:  v14.15.4
+[debug] [2021-02-24T19:18:12.539Z] Time:          Wed Feb 24 2021 11:18:12 GMT-0800 (Pacific Standard Time)
+[debug] [2021-02-24T19:18:12.539Z] ----------------------------------------------------------------------
+[debug] [2021-02-24T19:18:12.540Z] 
+[debug] [2021-02-24T19:18:12.542Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-02-24T19:18:12.564Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-24T19:18:12.565Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/lexirohrer/Downloads/Classes/WebTechnologies/memer
+
+[debug] [2021-02-24T19:18:13.853Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-02-24T19:18:13.853Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-02-24T19:19:59.394Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-24T19:19:59.395Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-24T19:19:59.559Z] <<< HTTP RESPONSE 200 {"date":"Wed, 24 Feb 2021 19:19:59 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T19:19:59.581Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"rohrer-memer","name":"Memer"}
+[debug] [2021-02-24T19:20:00.045Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Feb 2021 19:20:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=259","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T19:20:00.047Z] > refreshing access token with scopes: []
+[debug] [2021-02-24T19:20:00.047Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-24T19:20:00.152Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 24 Feb 2021 19:20:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T19:20:00.164Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 [none]
+[debug] [2021-02-24T19:20:00.486Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 200
+[debug] [2021-02-24T19:20:00.487Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 {"name":"operations/cp.6836185158863118971"}
+[debug] [2021-02-24T19:20:00.992Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:00.992Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 [none]
+[debug] [2021-02-24T19:20:01.322Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 200
+[debug] [2021-02-24T19:20:01.323Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 {"name":"operations/cp.6836185158863118971"}
+[debug] [2021-02-24T19:20:02.323Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:02.325Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 [none]
+[debug] [2021-02-24T19:20:02.627Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 200
+[debug] [2021-02-24T19:20:02.627Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 {"name":"operations/cp.6836185158863118971","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2021-02-24T19:20:04.630Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:04.631Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 [none]
+[debug] [2021-02-24T19:20:04.974Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 200
+[debug] [2021-02-24T19:20:04.975Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6836185158863118971 {"name":"operations/cp.6836185158863118971","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"610425397778","projectId":"rohrer-memer","lifecycleState":"ACTIVE","name":"Memer","createTime":"2021-02-24T19:19:59.913Z"}}
+[debug] [2021-02-24T19:20:04.977Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-24T19:20:04.977Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-24T19:20:05.072Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 24 Feb 2021 19:20:05 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T19:20:05.086Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/rohrer-memer:addFirebase  
+ 
+[debug] [2021-02-24T19:20:07.138Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Feb 2021 19:20:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T19:20:07.139Z] > refreshing access token with scopes: []
+[debug] [2021-02-24T19:20:07.139Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-24T19:20:07.255Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 24 Feb 2021 19:20:07 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T19:20:07.270Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 [none]
+[debug] [2021-02-24T19:20:07.826Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 200
+[debug] [2021-02-24T19:20:07.826Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 {"name":"operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4"}
+[debug] [2021-02-24T19:20:08.328Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:08.329Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 [none]
+[debug] [2021-02-24T19:20:08.860Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 200
+[debug] [2021-02-24T19:20:08.860Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 {"name":"operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4"}
+[debug] [2021-02-24T19:20:09.862Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:09.863Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 [none]
+[debug] [2021-02-24T19:20:10.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 200
+[debug] [2021-02-24T19:20:10.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 {"name":"operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4"}
+[debug] [2021-02-24T19:20:12.369Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:12.370Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 [none]
+[debug] [2021-02-24T19:20:12.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 200
+[debug] [2021-02-24T19:20:12.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 {"name":"operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4"}
+[debug] [2021-02-24T19:20:16.667Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:16.667Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 [none]
+[debug] [2021-02-24T19:20:17.247Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 200
+[debug] [2021-02-24T19:20:17.247Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 {"name":"operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4"}
+[debug] [2021-02-24T19:20:25.248Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-24T19:20:25.249Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 [none]
+[debug] [2021-02-24T19:20:25.612Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 200
+[debug] [2021-02-24T19:20:25.612Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4 {"name":"operations/workflows/NzM4NjQ1YmMtOGJkYS00NGIzLTgzNTktNDlmMGY5ZGE5NWQ4","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"rohrer-memer","projectNumber":"610425397778","displayName":"Memer","name":"projects/rohrer-memer","resources":{"hostingSite":"rohrer-memer"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: rohrer-memer
+[info]    - Project Name: Memer
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/rohrer-memer/overview
+[info] i  Using project rohrer-memer (Memer) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-24T19:21:32.779Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-02-24T19:21:32.873Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-02-24T19:21:32.873Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.9","browserURL":"https://www.gstatic.com/firebasejs/8.2.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.9/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.9/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.9/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.9/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/lexirohrer/Downloads/Classes/WebTechnologies/memer 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=164640707&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-24T19:23:02.800Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"868d508283bcb47e04b1","redirect_uri":"http://localhost:9005","state":"164640707"}
+[debug] [2021-02-24T19:23:03.177Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 24 Feb 2021 19:23:03 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"253242c1e7820e52112038b7d9a40e0a\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"E45C:0FB6:329F26:417E35:6036A796"}
+[debug] [2021-02-24T19:23:03.177Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-24T19:23:03.626Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-24T19:23:03.626Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"lexirohrer","id":53787944,"node_id":"MDQ6VXNlcjUzNzg3OTQ0","avatar_url":"https://avatars.githubusercontent.com/u/53787944?v=4","gravatar_id":"","url":"https://api.github.com/users/lexirohrer","html_url":"https://github.com/lexirohrer","followers_url":"https://api.github.com/users/lexirohrer/followers","following_url":"https://api.github.com/users/lexirohrer/following{/other_user}","gists_url":"https://api.github.com/users/lexirohrer/gists{/gist_id}","starred_url":"https://api.github.com/users/lexirohrer/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lexirohrer/subscriptions","organizations_url":"https://api.github.com/users/lexirohrer/orgs","repos_url":"https://api.github.com/users/lexirohrer/repos","events_url":"https://api.github.com/users/lexirohrer/events{/privacy}","received_events_url":"https://api.github.com/users/lexirohrer/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":4,"followers":0,"following":0,"created_at":"2019-08-05T15:25:46Z","updated_at":"2021-02-10T19:44:46Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":738,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as lexirohrer 
+[info] 
